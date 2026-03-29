@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6p8vx7h1pujy"]
+
+[ext_resource type="Script" uid="uid://dtf5pdjsaaqtq" path="res://pause_menu.gd" id="1_hdmo1"]
+
+[node name="PauseMenu" type="Control" groups=["pause_menu"]]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hdmo1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="Layout"]
+layout_mode = 2
+text = "Пауза"
+
+[node name="ResumeButton" type="Button" parent="Layout"]
+layout_mode = 2
+text = "Продолжить"
+
+[node name="QuitButton" type="Button" parent="Layout"]
+layout_mode = 2
+text = "Выйти в меню"

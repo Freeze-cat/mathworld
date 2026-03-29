@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dccl6ps8poglv"]
+
+[ext_resource type="Script" uid="uid://cjsxejx8623os" path="res://inventory.gd" id="1_pohso"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_pohso")
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 100.0
+offset_right = 295.0
+offset_bottom = 500.0
+
+[node name="Grid" type="GridContainer" parent="Panel"]
+layout_mode = 2
+columns = 5

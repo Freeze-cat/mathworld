@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt8agccxkqini"]
+
+[ext_resource type="Script" uid="uid://buelbjyp11grn" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_06t4h")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="Layout"]
+layout_mode = 2
+text = "MathWorld"
+
+[node name="Subtitle" type="Label" parent="Layout"]
+layout_mode = 2
+text = "мир чисел ждёт тебя"
+
+[node name="StartButton" type="Button" parent="Layout"]
+layout_mode = 2
+text = "Начать"
+
+[node name="QuitButton" type="Button" parent="Layout"]
+layout_mode = 2
+text = "Выйти"

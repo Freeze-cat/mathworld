@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq23wov2e67p6"]
+
+[ext_resource type="Script" uid="uid://b7bbr083lbuh1" path="res://battle.gd" id="1_ip7xm"]
+
+[node name="Battle" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ip7xm")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.8, 0, 0, 0)
+
+[node name="TimerLabel" type="Label" parent="."]
+layout_mode = 2
+offset_top = 29.0
+offset_right = 91.0
+offset_bottom = 52.0
+text = "⏱ 15.0"
+
+[node name="EnemyLabel" type="Label" parent="."]
+layout_mode = 2
+offset_right = 91.0
+offset_bottom = 23.0
+text = "Противник бросает вызов!"
+
+[node name="ExpressionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "3 + ? = 7"
+
+[node name="ResultLabel" type="Label" parent="."]
+layout_mode = 2
+offset_top = 31.0
+offset_right = 72.0
+offset_bottom = 54.0
+
+[node name="InventoryPanel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerGrid" type="GridContainer" parent="InventoryPanel"]
+layout_mode = 2
+columns = 5
+
+[node name="CurrentAnswerLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "→"
